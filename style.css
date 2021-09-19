@@ -1,0 +1,506 @@
+/* ######################### Defaults ######################## */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+    font-size: 1.4rem;
+}
+/* ######################## Contents ########################### */
+/* ######################## Header ############################# */
+header {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.9rem;
+}
+
+.header-text,
+.header-icon {
+    flex-grow: 1;
+    flex-basis: 50%;    
+}
+
+header .header-text {
+    font-family: cursive, 'Open Sans', sans-serif;
+    color: rgb(87, 87, 87);
+    margin: 0 15%;
+}
+
+header .header-icon {
+    justify-content: flex-end;
+    background-image: url('./images/menu.svg');
+    background-repeat: no-repeat;
+    margin: 1rem 0 0 25%;
+}
+
+.row-100 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.row-column-100 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ############################# Hero Section ############################## */
+.hero-row-column-100 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.row-100-hero {
+    display: flex;
+    flex-direction: column;
+}
+
+section .hero-bg {
+    height: 100vh;
+    background-image: url('./images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    overflow: visible;
+}
+
+@media (max-width: 480px) {
+    section .hero-bg {
+        background-image: url('./images/hero-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 95% 0;
+    }    
+}
+
+.hero .hero-text {
+    color: white;
+    font-family: 'Open Sans', sans-serif; 
+    text-align: left;
+    display: flex;
+} 
+
+.hero .hero-text p {
+    font-size: 3rem;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 480px) {
+    .hero .hero-text p {
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 5px #000;
+    }
+}
+
+.hero .hero-text h1 {
+    font-size: 4.8rem;    
+    font-weight: 900;  
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+@media (max-width: 480px) {
+    .hero .hero-text h1 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+        text-shadow: 2px 2px 5px #000;
+    }
+}
+
+.hero-text hr {
+    width: 100%;
+    height: 8px;
+    background-color: white;
+    border: unset;
+    margin-top: 1rem;
+}
+
+@media (max-width: 480px) {
+    .hero .hero-text hr {
+        height: 5px;
+        margin-top: 0.8rem;
+        box-shadow: 2px 1px 3px #000;
+    }
+}
+
+.hero-icons {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0;
+}
+
+@media (max-width: 480px) {
+    .hero-icons {
+        height: 60px;
+        width: 50px;
+    }
+}
+
+.hero-icons .cleaning-bucket {    
+    padding: 0 20%;
+}
+
+@media (max-width: 480px) {
+    .hero-icons .cleaning-bucket {
+        padding: 0 45%;
+        height: 65px;
+    }
+}
+
+.book-now {
+    background-color: #f2f2f2;
+    color: #111111;
+    padding: 5rem;
+    text-align: center;
+}
+
+.book-now .book-now-text {
+    margin: auto;
+    line-height: 1.8;
+}
+
+.book-now .book-now-text h6 {
+    color: rgb(143, 138, 138);
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+.book-now .book-now-text-2 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+}
+
+.book-now button {
+    background-color: #e71a23;
+    color: white;
+    font-size: 1rem;
+    border: unset;
+    padding: 1.1rem 1.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.book-now button:hover {
+    background-color: #921010e7;
+}
+
+@media (max-width: 480px) { 
+    .book-now .book-now-text-2 {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.help {
+    padding: 4rem 15%;
+    width: 100%;
+}
+
+.help .help-column-1,
+.help .help-column-2 {
+    flex-grow: 1;
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+
+.help-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.help-column-1 {
+    
+}
+
+.help-column-1 img {    
+    margin: auto 0 auto auto;
+    justify-content: center;
+    display: flex;
+}
+
+.help-column-1 p {
+    text-align: left;
+    width: 90%;
+    padding: 10% 10% 5% 10%;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.9px;
+}
+
+.help-column-2 {
+    
+}
+
+.help-column-2 img {    
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.help-column-2-text {
+    padding: 3.5rem 2rem ;
+}
+
+.help-column-2-text h2 {
+    
+}
+
+.help-column-2-text h3 {
+    padding: 1.5rem 0 0.5rem 0;
+    font-weight: 700;
+    font-size: 1.9rem;
+    font-family: sans-serif;
+    color: rgb(218, 38, 38);
+}
+
+.quality {
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.quality-row-50 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: auto;
+}
+
+.quality .quality-picture,
+.quality .quality-text {
+    flex-grow: 1;
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+
+.quality-picture {
+    background-image: url('./images/quality.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 100%;
+    min-height: 500px;
+    position: relative;
+}
+
+.quality .quality-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quality .quality-text h2 {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+    font-size: 60px;
+}
+
+.quality .quality-text hr {
+    background-color: #e71a23;
+    height: 8px;
+    border: unset;
+    width: 380px;
+    margin: 20px 0;
+}
+
+.quality .quality-text p {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-top: 2px;
+}
+
+.quality .quality-text button {
+    background-color: #e71a23;
+    color: white;
+    font-size: 1rem;
+    border: unset;
+    padding: 1.1rem 1.7rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.services {
+    padding: 3rem;
+    width: 80%;
+    margin: auto;
+}
+
+.services h1 {
+    padding: 0 0 3% 2rem;
+    font-size: 45px;
+    font-family: cursive;
+}
+
+.services-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.services .service-painting,
+.services .service-electrical,
+.services .service-repair {
+    flex-grow: 1;
+    flex-basis: 33.33%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.services h6 {
+    padding: 1.2rem 0 1rem 0;
+    font-size: 24px;
+}
+
+.services p {
+    font-size: 22px;
+    font-family: Golota;
+    font-style: italic;
+    line-height: 1.3;
+}
+
+.services .services-row img {
+    height: 75px;
+    width: 75px;
+    padding: 0.5rem;
+    background-color: rgb(221, 39, 39);
+    border-radius: 50px;    
+}
+
+.about-us {
+    background-color: rgb(19, 19, 109);
+    padding: 2rem;
+    width: 100%;
+}
+
+.about-us-text,
+.about-us-gallery {
+    flex-grow: 1;
+    flex-basis: 50%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-text {
+    color: white;
+    line-height: 1.3;
+    justify-content: center;
+}
+
+.about-us-text p {
+    font-size: 16px;
+    font-family: Oswald, serif;
+    letter-spacing: 2px;
+}
+
+.about-us-text h1 {
+    font-size: 50px;
+}
+
+.about-us-text h2 {
+    font-size: 55px;
+    font-weight: 200;
+}
+
+.to-do {
+    background-color: #f2f2f2;
+    color: #111111;
+    padding: 5rem;
+    text-align: center;
+}
+.to-do .to-do-text {
+    margin: auto;
+    line-height: 1.3;
+    width: 40%;
+    padding: 1rem;
+}
+
+.to-do .to-do-text-2 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+}
+
+.to-do .book button{
+    background-color: #e71a23;
+    color: white;
+    font-size: 1rem;
+    border: unset;
+    padding: 1.1rem 1.7rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.to-do .call button{
+    background-color: inherit;
+    color: 000;
+    font-size: 1rem;
+    border: 2px solid black;
+    padding: 1rem 2.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.to-do .book button:hover {
+    background-color: #921010e7;
+}
+
+.to-do .call button:hover {
+    background-color: #e0dbdbe7;
+}
+
+@media (max-width: 480px) { 
+    .to-do .book-now-text-2 {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* ######################## Footer ######################### */
+.finals {
+    background-color: #333333;
+    color: #fff;
+    padding: 3rem;
+    text-align: center;
+}
+
+.finals .finals-text {
+    font-size: 1rem;
+    width: 30%;
+    margin: auto;
+}
+
+.finals .finals-text2 {
+    font-size: 0.9rem;
+    padding-top: 2rem;
+}
